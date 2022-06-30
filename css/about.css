@@ -1,0 +1,73 @@
+.about__header {
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.about__header-text {
+  text-align: left;
+  margin-top: 4.5rem;
+  margin-left: 5rem;
+  width: 55%;
+}
+
+.about__title {
+  color: #00161c;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 2.7rem;
+  font-weight: 300;
+  padding: 1rem auto;
+}
+
+.about__header-bajada {
+  color: #00161c;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 1.3rem;
+  padding: 1.5rem 0.2rem;
+  line-height: 1.7rem;
+}
+
+.about__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.about__redes-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #00161c;
+}
+
+.about__pic {
+  border-radius: 50%;
+  height: 300px;
+  margin: 2rem 5rem 1rem 0.3rem;
+  width: 300px;
+  object-fit: cover;
+}
+
+.about__bajada {
+  background-color: #f7f0f4;
+  color: #00161c;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  padding: 2rem 1.5rem;
+}
+
+.about__bajada-title {
+  color: #081f25;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-left: 3rem;
+  padding-bottom: 1rem;
+}
+
+.about__bajada-texto {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  padding: 0.5rem 3rem;
+}

@@ -1,0 +1,28 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 2.5rem;
+  padding-top: 1.2rem;
+}
+
+.menu__header-title {
+  color: #00161c;
+  font-family: "Josefin Sans", sans-serif;
+  padding-left: 2rem;
+}
+
+.menu__ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.menu__link {
+  color: #00161c;
+  text-decoration: none;
+  padding-right: 2rem;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}

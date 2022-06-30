@@ -1,0 +1,47 @@
+.skills {
+  padding: 2rem;
+}
+.skills__hard-title,
+.skills__soft-title,
+.hobbies__main-tittle {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.skills__hard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.skills__item {
+  width: 200px;
+  height: 100px;
+  text-align: left;
+  border: 2px solid #dadada;
+  padding-top: 4rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skills__icon {
+  font-size: 4rem;
+}
+
+.skills__title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  padding-top: 0.2rem;
+}
+
+.skills__soft {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
