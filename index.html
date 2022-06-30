@@ -30,29 +30,38 @@
   <body>
     <section class="menu">
       <header class="menu__header">
-        <i class="fa-solid fa-house menu__header-icon"></i>
+        <a href="#home"> <i class="fa-solid fa-house menu__header-icon"></i></a>
+
         <h5 class="menu__header-title">Ltizzi</h5>
       </header>
       <nav class="menu__nav">
         <ul class="menu__ul">
-          <li class="menu__item"><a href="" class="menu__link">Sobre mí</a></li>
-          <li class="menu__item"><a href="" class="menu__link">Skills</a></li>
-          <li class="menu__item"><a href="" class="menu__link">Hobbies</a></li>
           <li class="menu__item">
-            <a href="" class="menu__link">Formación</a>
+            <a href="#about" class="menu__link">Sobre mí</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Proyectos</a>
+            <a href="#skills" class="menu__link">Skills</a>
           </li>
-          <li class="menu__item"><a href="" class="menu__link">Contacto</a></li>
+          <li class="menu__item">
+            <a href="#hobbies" class="menu__link">Hobbies</a>
+          </li>
+          <li class="menu__item">
+            <a href="#formacion" class="menu__link">Formación</a>
+          </li>
+          <li class="menu__item">
+            <a href="#proyectos" class="menu__link">Proyectos</a>
+          </li>
+          <li class="menu__item">
+            <a href="#contacto" class="menu__link">Contacto</a>
+          </li>
         </ul>
       </nav>
     </section>
-    <section class="about">
+    <section class="about" id="home">
       <div class="about__header">
         <div class="about__header-text">
           <h2 class="about__title">
-            Hola, mi nombre es Leonardo Terlizzi y soy un Desarrollador Web
+            Hola, mi nombre es Leonardo Terlizzi y soy Desarrollador Web
           </h2>
           <p class="about__header-bajada">
             Principalmente autodidacta, hice el curso Argentina Programa y ahora
@@ -91,7 +100,7 @@
           class="about__pic"
         />
       </div>
-      <div class="about__bajada">
+      <div class="about__bajada" id="about">
         <h3 class="about__bajada-title">Sobre mí</h3>
         <p class="about__bajada-texto">
           Me llamo Leonardo. Desde mi primera computadora, una 386 DX 40Mhz con
@@ -114,7 +123,7 @@
         </p>
       </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
       <h3 class="skills__hard-title">Hard Skills</h3>
       <ul class="skills__hard">
         <li class="skills__item">
@@ -192,7 +201,7 @@
           <p class="skills__title">Resolutivo</p>
         </li>
       </ul>
-      <h3 class="hobbies__main-tittle">Hobbies</h3>
+      <h3 class="hobbies__main-tittle" id="hobbies">Hobbies</h3>
       <ul class="skills__soft">
         <li class="skills__item">
           <i class="fa-solid fa-music skills__icon"></i>
@@ -216,7 +225,7 @@
         </li>
       </ul>
     </section>
-    <section class="edu">
+    <section class="edu" id="formacion">
       <h3 class="edu__main-title">Formación Académica</h3>
       <ul class="edu__list">
         <li class="edu__item">
@@ -259,7 +268,7 @@
         </li>
       </ul>
     </section>
-    <section class="proyectos">
+    <section class="proyectos" id="proyectos">
       <h3 class="proyectos__title">Proyectos</h3>
 
       <div class="proyecto">
@@ -339,7 +348,7 @@
         </div>
       </div>
     </section>
-    <section class="contacto">
+    <section class="contacto" id="contacto">
       <img
         src="./assets/contacto.jpeg"
         alt="Imagen de un teléfono"

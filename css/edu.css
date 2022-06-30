@@ -37,6 +37,7 @@
 .edu__icon {
   width: 18rem;
   height: 12rem;
+  margin: 0 auto;
   object-fit: fill;
   padding-bottom: 1rem;
 }
