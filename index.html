@@ -14,17 +14,23 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=M+PLUS+Rounded+1c:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://use.typekit.net/met6ohh.css" />
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/menu.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/skills.css" />
     <link rel="stylesheet" href="./css/edu.css" />
+    <link rel="stylesheet" href="./css/proyectos.css" />
+    <link rel="stylesheet" href="./css/contacto.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
     <title>Portfolio - Leonardo Terlizzi</title>
   </head>
   <body>
     <section class="menu">
       <header class="menu__header">
+        <i class="fa-solid fa-house menu__header-icon"></i>
         <h5 class="menu__header-title">Ltizzi</h5>
       </header>
       <nav class="menu__nav">
@@ -54,16 +60,28 @@
           </p>
           <ul class="about__redes">
             <li class="about__redes-item">
-              <a href="" class="about__redes-link">Github</a>
+              <a href="https://github.com/Ltizzi" class="about__redes-link"
+                ><i class="fa-brands fa-github about__redes-icon"></i
+              ></a>
             </li>
             <li class="about__redes-item">
-              <a href="" class="about__redes-link">Linkedin</a>
+              <a
+                href="https://www.linkedin.com/in/lterlizzi/"
+                class="about__redes-link"
+                ><i class="fa-brands fa-linkedin about__redes-icon"></i
+              ></a>
             </li>
             <li class="about__redes-item">
-              <a href="" class="about__redes-link">Twitter</a>
+              <a href="https://twitter.com/ltizzi83" class="about__redes-link"
+                ><i class="fa-brands fa-twitter about__redes-icon"></i
+              ></a>
             </li>
             <li class="about__redes-item">
-              <a href="" class="about__redes-link">Email</a>
+              <a
+                href="mailto:terlizzileonardo@gmail.com"
+                class="about__redes-link"
+                ><i class="fa-solid fa-envelope about__redes-icon"></i
+              ></a>
             </li>
           </ul>
         </div>
@@ -88,10 +106,11 @@
           GNU/Linux, siempre fui mi servicio técnico personal.
         </p>
         <p class="about__bajada-texto">
-          Hace poco decidí volver a programar, gracias a distintos cursos
-          online, pero principalmente de manera autodidacta, por primera vez me
-          siento confiado en mis conocimientos técnicos para empezar a aplicar
-          en distintos trabajos, buscando mi primer empleo en el sector.
+          Hace poco decidí cambiar de carrera y volver a programar, gracias a
+          distintos cursos online, pero principalmente de manera autodidacta,
+          por primera vez me siento confiado en mis conocimientos técnicos para
+          empezar a aplicar en distintos trabajos, buscando mi primer empleo en
+          el sector.
         </p>
       </div>
     </section>
@@ -116,10 +135,10 @@
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="67"
-            height="67"
+            width="32"
+            height="32"
             viewBox="0 0 50 50"
-            style="fill: #000000"
+            style="fill: #6272a4"
             class="skills__icon"
           >
             <path
@@ -198,68 +217,166 @@
       </ul>
     </section>
     <section class="edu">
-      <h3 class="edu__main-title">Educación y certificaciones</h3>
-      <ul>
+      <h3 class="edu__main-title">Formación Académica</h3>
+      <ul class="edu__list">
         <li class="edu__item">
-          <img src="" alt="" class="edu__icon" />
-          <h4 class="edu__title">Argentina Programa</h4>
-          <p class="edu__bajada"></p>
+          <img
+            src="./assets/argprog.jpg"
+            alt="logo argentina programa"
+            class="edu__icon"
+          />
+          <h4 class="edu__title">Programador Fullstack Jr</h4>
+          <h5 class="edu__subtitle">Argentina Programa</h5>
+          <p class="edu__bajada">2021-2022</p>
+          <p class="edu__bajada2">
+            Git, HTML, CSS, TS, Angular, Java, Spring, MySQL
+          </p>
         </li>
         <li class="edu__item">
-          <img src="" alt="" class="edu__icon" />
-          <h4 class="edu__title">Oracle ONE - Alura Latam<</h4>
-          <p class="edu__bajada">/p></p>
+          <img
+            src="assets/oracleonealura.jpg"
+            alt="Logo Oracle y alura"
+            class="edu__icon"
+          />
+          <h4 class="edu__title">Oracle ONE Next Education</h4>
+          <h5 class="edu__subtitle">Alura Latam</h5>
+          <p class="edu__bajada">2022-En curso</p>
+          <p class="edu__bajada2">HTML, CSS, JS, Java</p>
         </li>
 
         <li class="edu__item">
-          <img src="" alt="" class="edu__icon" />
-          <h4 class="edu__title">FreecodeCamp</h4>
-          <p class="edu__bajada"></p>
+          <img
+            src="assets/freecodecamp.png"
+            alt="Logo FreeCodeCamp"
+            class="edu__icon"
+          />
+          <h4 class="edu__title">JavaScript Algorithms and Data</h4>
+          <h5 class="edu__subtitle">FreecodeCamp</h5>
+          <p class="edu__bajada">2022</p>
+          <p class="edu__bajada2">
+            Principios de Javascript y estructura de datos
+          </p>
         </li>
       </ul>
     </section>
     <section class="proyectos">
       <h3 class="proyectos__title">Proyectos</h3>
+
       <div class="proyecto">
         <h5 class="proyecto__title">Encriptador</h5>
-        <img src="" alt="" class="proyecto__imagen" />
-        <ul class="proyecto__submenu">
-          <li class="proyecto__item"><a href="" class="proyecto__link"></a></li>
-          <li class="proyecto__item"><a href="" class="proyecto__link"></a></li>
-        </ul>
+        <div class="proyecto__inner">
+          <ul class="proyecto__submenu">
+            <li class="proyecto__item">
+              <a
+                href="https://github.com/Ltizzi/Alura-Challenge-N-1"
+                class="proyecto__link"
+                ><i class="fa-brands fa-github proyecto__link-icon"></i
+              ></a>
+            </li>
+            <li class="proyecto__item">
+              <a
+                href="https://ltizzi.github.io/Alura-Challenge-N-1/"
+                class="proyecto__link"
+                >Demo</a
+              >
+            </li>
+          </ul>
+
+          <img
+            src="./assets/encriptador.png"
+            alt="Imagen del encriptador"
+            class="proyecto__imagen"
+          />
+        </div>
       </div>
 
       <div class="proyecto">
         <h5 class="proyecto__title">Ahorcado</h5>
-        <img src="" alt="" class="proyecto__imagen" />
-        <ul class="proyecto__submenu">
-          <li class="proyecto__item"><a href="" class="proyecto__link"></a></li>
-          <li class="proyecto__item"><a href="" class="proyecto__link"></a></li>
-        </ul>
+        <div class="proyecto__inner">
+          <img
+            src="./assets/ahorcado.png"
+            alt="Imagen del juego ahorcado"
+            class="proyecto__imagen"
+          />
+          <ul class="proyecto__submenu">
+            <li class="proyecto__item">
+              <a
+                href="https://github.com/Ltizzi/Alura-Challenge-N-2"
+                class="proyecto__link"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li class="proyecto__item">
+              <a
+                href="https://ltizzi.github.io/Alura-Challenge-N-2/"
+                class="proyecto__link"
+                >Demo</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="proyecto">
         <h5 class="proyecto__title">Portfolio Web</h5>
-        <img src="" alt="" class="proyecto__imagen" />
-        <ul class="proyecto__submenu">
-          <li class="proyecto__item"><a href="" class="proyecto__link"></a></li>
-          <li class="proyecto__item"><a href="" class="proyecto__link"></a></li>
-        </ul>
+        <div class="proyecto__inner">
+          <ul class="proyecto__submenu">
+            <li class="proyecto__item">
+              <a
+                href="https://github.com/Ltizzi/Portfolio-frontend"
+                class="proyecto__link"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li class="proyecto__item">
+              <a href="https://ltizzi-portfolio.web.app/" class="proyecto__link"
+                >Demo</a
+              >
+            </li>
+          </ul>
+
+          <img src="./assets/portfolio.png" alt="" class="proyecto__imagen" />
+        </div>
       </div>
     </section>
     <section class="contacto">
-      <img src="" alt="" class="contacto__img" />
+      <img
+        src="./assets/contacto.jpeg"
+        alt="Imagen de un teléfono"
+        class="contacto__img"
+      />
       <div class="contacto__form-container">
         <h6 class="contacto__title">Contacto</h6>
-        <p class="contacto__bajada">blabla formulario</p>
+
         <form action="" class="contacto__form">
-          <label for="" class="contacto__form-label">Nombre</label>
-          <input type="text" class="contacto__form-input" />
-          <label for="" class="contacto__form-label">E-mail</label>
-          <input type="text" class="contacto__form-input" />
-          <label for="" class="contacto__form-label">Asunto</label>
-          <input type="text" class="contacto__form-input" />
-          <input type="text" class="contacto__form-input-about" />
+          <label for="nombre" class="contacto__form-label1">Nombre</label><br />
+          <input
+            type="text"
+            class="contacto__form-input"
+            placeholder="Nombre"
+          /><br />
+          <label for="mail" class="contacto__form-label2">E-mail</label><br />
+          <input
+            type="text"
+            class="contacto__form-input"
+            placeholder="E-mail"
+          /><br />
+          <label for="asunto" class="contacto__form-label3">Asunto</label><br />
+          <input
+            type="text"
+            class="contacto__form-input"
+            placeholder="Asunto"
+          /><br />
+
+          <textarea
+            name=""
+            id=""
+            cols="50"
+            rows="5"
+            class="contacto__form-input-about"
+            placeholder="Mensaje"
+          ></textarea>
+          <br />
           <input type="submit" class="contacto__form-submit" />
         </form>
       </div>
@@ -267,19 +384,19 @@
     <footer class="footer">
       <ul class="footer__redes">
         <li class="footer__redes-item">
-          <a href="" class="footer__redes-link"
-            ><img src="" alt="" class="footer__redes-icon"
-          /></a>
+          <a href="" class="footer__redes-link">
+            <i class="fa-brands fa-github footer__redes-github"></i
+          ></a>
+        </li>
+        <li class="footer__redes-item">
+          <a href="" class="footer__redes-link">
+            <i class="fa-brands fa-linkedin footer__redes-linkedin"></i
+          ></a>
         </li>
         <li class="footer__redes-item">
           <a href="" class="footer__redes-link"
-            ><img src="" alt="" class="footer__redes-icon"
-          /></a>
-        </li>
-        <li class="footer__redes-item">
-          <a href="" class="footer__redes-link"
-            ><img src="" alt="" class="footer__redes-icon"
-          /></a>
+            ><i class="fa-brands fa-twitter-square footer__redes-twitter"></i
+          ></a>
         </li>
       </ul>
       <p class="footer__text">Desarrollado por Leonardo Terlizzi 2022</p>

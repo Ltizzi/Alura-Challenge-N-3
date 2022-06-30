@@ -1,16 +1,32 @@
 .menu {
   display: flex;
+  background-color: rgba(255, 251, 251, 0.9);
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 2.5rem;
-  padding-top: 1.2rem;
+  height: 2rem;
+  padding-top: 1rem;
+  position: fixed;
+}
+
+.menu__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
 }
 
 .menu__header-title {
   color: #00161c;
   font-family: "Josefin Sans", sans-serif;
-  padding-left: 2rem;
+  padding-top: 0.4rem;
+  padding-left: 0.4rem;
+}
+
+.menu__header-icon {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: #44475a;
 }
 
 .menu__ul {
