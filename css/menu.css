@@ -1,6 +1,7 @@
 .menu {
   display: flex;
-  background-color: rgba(255, 251, 251, 0.9);
+  /* background-color: rgba(255, 251, 251, 0.9); */
+  background: #282a36;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
@@ -17,28 +18,35 @@
 }
 
 .menu__header-title {
-  color: #00161c;
-  font-family: "Josefin Sans", sans-serif;
+  color: #ff79c6;
+  font-weight: 700;
+  font-family: "droid-sans-mono", monospace;
   padding-top: 0.4rem;
-  padding-left: 0.4rem;
+  padding-left: 0.5rem;
 }
 
 .menu__header-icon {
+  color: #50fa7b;
   font-size: 1.2rem;
   margin-left: 1rem;
-  color: #44475a;
 }
 
 .menu__ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   list-style-type: none;
 }
 
+.punto {
+  color: #f8f8f2;
+  font-weight: 700;
+  font-family: "droid-sans-mono", monospace;
+}
+
 .menu__link {
-  color: #00161c;
   text-decoration: none;
-  padding-right: 2rem;
+  padding-right: 0.5rem;
   font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
