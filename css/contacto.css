@@ -9,6 +9,7 @@
 .contacto__img {
   width: 50%;
   height: 30rem;
+  object-fit: cover;
 }
 
 .contacto__form-container {
