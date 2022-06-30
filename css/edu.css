@@ -75,3 +75,24 @@
   color: #f1fa8c;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .edu__main-title {
+    font-size: 2rem;
+  }
+  .edu__list {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .edu__item {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .edu__icon {
+    width: 10rem;
+    height: 6rem;
+  }
+}

@@ -59,3 +59,27 @@
   justify-content: space-around;
   padding: 0.5rem 2rem;
 }
+
+@media screen and (max-width: 768px) {
+  .skills {
+    padding: 0 0;
+  }
+  .skills__item {
+    width: 125px;
+    height: 75px;
+    margin-left: 0.5rem;
+  }
+
+  .skills__hard {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .skills__item {
+    width: 175px;
+    height: 125px;
+  }
+  .skills__icon {
+    margin-top: 4rem;
+  }
+}

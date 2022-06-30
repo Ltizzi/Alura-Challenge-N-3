@@ -70,3 +70,13 @@
   font-weight: 700;
   line-height: 1.5;
 }
+
+@media screen and (max-width: 768px) {
+  .proyectos__title {
+    font-size: 2rem;
+  }
+
+  .proyecto__submenu {
+    padding-top: 2rem;
+  }
+}
