@@ -1,20 +1,24 @@
 .animLeft {
   animation: leftTransition 0.5s ease none;
+  animation-delay: 500ms;
 }
 .animLeft2 {
   animation: leftTransition 0.8s ease none;
+  animation-delay: 500ms;
 }
 
 .animLeft3 {
   animation: leftTransition 1s ease none;
+  animation-delay: 500ms;
 }
 
 .animRight {
   animation: rightTransition 1.2s ease none;
+  animation-delay: 500ms;
 }
 
 .fade {
-  animation: fade 1s ease none;
+  animation: fade 0.5s ease none;
 }
 
 .slowFade {
