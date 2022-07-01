@@ -1,5 +1,8 @@
 let submit = document.querySelector("#submit");
 let foto = document.querySelector("#fotoTel");
+let form = document.querySelector("#form");
+
+let mensaje = fetchFormData(form);
 
 let regex = /^[a-zA-Z]+$/g;
 let validMail =
@@ -39,22 +42,43 @@ function fetchFormData(form) {
   return mensaje;
 }
 
+function checkEmptyiness(mensaje) {
+  mensaje.forEach((msg) => {
+    if (msg.length == 0) return false;
+  });
+  return true;
+}
+
 function formValidator(mensaje) {
   var errores = [];
+
+  if (
+    mensaje.nombre.length == 0 ||
+    mensaje.mail.length == 0 ||
+    mensaje.asunto.length == 0 ||
+    mensaje.mensaje.length == 0
+  ) {
+    errores.push("Ningún campo del formulario puede estar vacío");
+    return errores;
+  }
+
+  //   errores.push("El nombre no puede estar vacío");
+  // if (mensaje.mail.length == 0) errores.push("El mail no puede estar vacío");
+  // if (mensaje.asunto.length == 0)
+  //   errores.push("El asunto no puede estar vacío");
+  // if (mensaje.mensaje.length == 0)
+  //   errores.push("El mensaje no puede estar vacío");
+
   if (!nameValidator(mensaje.nombre)) errores.push("Ingrese un nombre válido");
-  if (mensaje.nombre.length == 0)
-    errores.push("El nombre no puede estar vacío");
   if (mensaje.nombre.length > 50)
     errores.push("El nombre no puede tener más de 50 caracteres");
-  if (mensaje.mail.length == 0) errores.push("El mail no puede estar vacío");
+
   if (!mailValidator(mensaje.mail)) errores.push("Ingrese un mail válido");
   if (!nameValidator(mensaje.asunto)) errores.push("Ingrese un asunto válido");
-  if (mensaje.asunto.length == 0)
-    errores.push("El asunto no puede estar vacío");
+
   if (mensaje.asunto.length > 50)
     errores.push("El asunto no puede tener más de 50 caracteres");
-  if (mensaje.mensaje.length == 0)
-    errores.push("El mensaje no puede estar vacío");
+
   if (mensaje.mensaje.length > 300)
     errores.push("El mensaje no puede tener más de 300 caracteres");
   return errores;
@@ -83,6 +107,21 @@ function showErrores(errores) {
     msgError.appendChild(errorP);
   });
 
+  setTimeout(() => {
+    msgError.innerHTML = "";
+    foto.classList.remove("hide");
+  }, 2000);
+}
+
+function formVacio() {
+  var msgError = document.querySelector("#errores");
+  foto.classList.add("hide");
+  msgError.innerHTML = "";
+  var msg = "Los campos no pueden estar vacíos";
+  var errorP = document.createElement("p");
+  errorP.textContent = msg;
+  errorP.classList.add("error");
+  msgError.appendChild(errorP);
   setTimeout(() => {
     msgError.innerHTML = "";
     foto.classList.remove("hide");
