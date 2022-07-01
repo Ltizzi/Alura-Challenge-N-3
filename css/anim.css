@@ -139,7 +139,9 @@
     transform: rotate(45deg);
   }
   50% {
-    transform: scale(30);
+    transform: scale(3);
+    border-radius: 50%;
+    font-size: 20rem;
   }
 
   60% {
@@ -172,7 +174,8 @@
     transform: none;
   }
   50% {
-    transform: scale(30);
+    transform: scale(3);
+    border-radius: 50%;
   }
   to {
     transform: scale(1);
@@ -185,6 +188,7 @@
   }
   50% {
     transform: translateX(10rem);
+    border-radius: 70%;
   }
   to {
     transform: translateX(0);
@@ -196,10 +200,11 @@
     transform: scale(1.1);
   }
   25% {
-    transform: translate(12rem, -6rem);
+    transform: translate(-12rem, -6rem);
   }
   50% {
-    transform: scale(20);
+    transform: scale(3);
+    border-radius: 35%;
   }
   90% {
     transform: translate(0, 0);
@@ -214,10 +219,11 @@
     transform: scale(1);
   }
   25% {
-    transform: translateX(12rem);
+    transform: translateX(15rem);
   }
   50% {
-    transform: translate(12rem, -6rem);
+    transform: translate(8rem, -10rem);
+    border-radius: 5%;
   }
   90% {
     transform: translate(0, 0);
