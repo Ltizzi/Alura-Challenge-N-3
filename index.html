@@ -437,31 +437,37 @@
       </div>
     </section>
     <section class="contacto" id="contacto">
+      <div class="contacto__errores" id="errores"></div>
       <img
         src="./assets/contacto.jpeg"
         alt="Imagen de un teléfono"
         class="contacto__img"
+        id="fotoTel"
       />
+
       <div class="contacto__form-container">
         <h6 class="contacto__title">
           <span style="color: #bd93f9">ltizzi</span
           ><span class="punto">.</span>Contacto()
         </h6>
 
-        <form action="" class="contacto__form">
+        <form id="form" class="contacto__form">
           <label for="nombre" class="contacto__form-label1">.setNombre()</label
           ><br />
           <input
             type="text"
             class="contacto__form-input"
             placeholder="Nombre"
+            id="nombre"
           /><br />
+
           <label for="mail" class="contacto__form-label2">.setE-mail()</label
           ><br />
           <input
             type="text"
             class="contacto__form-input"
             placeholder="E-mail"
+            id="mail"
           /><br />
           <label for="asunto" class="contacto__form-label3">.setAsunto()</label
           ><br />
@@ -469,21 +475,23 @@
             type="text"
             class="contacto__form-input"
             placeholder="Asunto"
+            id="asunto"
           /><br />
 
           <textarea
-            name=""
-            id=""
+            name="mensaje"
+            id="mensaje"
             cols="50"
             rows="5"
             class="contacto__form-input-about"
             placeholder="Mensaje"
           ></textarea>
           <br />
-          <input type="submit" class="contacto__form-submit big" />
+          <input type="submit" class="contacto__form-submit big" id="submit" />
         </form>
       </div>
     </section>
+
     <footer class="footer">
       <ul class="footer__redes">
         <li class="footer__redes-item">
@@ -507,5 +515,7 @@
       </ul>
       <p class="footer__text">Desarrollado por Leonardo Terlizzi 2022</p>
     </footer>
+
+    <script src="./scripts/validaciones.js"></script>
   </body>
 </html>

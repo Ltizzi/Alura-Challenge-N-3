@@ -5,6 +5,29 @@
   padding: 1rem 3rem;
   background: #e8e2f1;
 }
+.contacto__errores {
+  height: 30rem;
+  padding-top: 1rem;
+  background-color: bisque;
+}
+.error {
+  text-align: center;
+  background-color: lightsalmon;
+  border: 2px lightcoral solid;
+  color: #924c4c;
+  font-family: "droid-sans-mono", monospace;
+  font-weight: bolder;
+  /* margin-right: auto;
+  margin-left: auto; */
+
+  margin-bottom: 5px;
+  width: 37rem;
+  padding: 1rem;
+}
+
+.hide {
+  display: none;
+}
 
 .contacto__img {
   width: 50%;
