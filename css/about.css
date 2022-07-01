@@ -52,6 +52,8 @@
 
 .about__redes-link {
   text-decoration: none;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+
   font-size: 1.2rem;
   color: #282a36;
 }

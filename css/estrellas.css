@@ -1,6 +1,6 @@
 .stars-fondo {
   overflow: hidden;
-  background: radial-gradient(ellipse at bottom, #44475a 0%, #282a36 100%);
+  background: radial-gradient(ellipse at right, #44475a 0%, #282a36 100%);
 }
 
 .stars {

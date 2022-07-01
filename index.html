@@ -31,9 +31,14 @@
     <title>Portfolio - Leonardo Terlizzi</title>
   </head>
   <body>
-    <section class="menu">
+    <section class="menu slowFade">
       <header class="menu__header">
-        <a href="#home"> <i class="fa-solid fa-house menu__header-icon"></i></a>
+        <a href="#home" title="Home">
+          <i
+            class="fa-solid fa-house menu__header-icon scale"
+            tooltip="asda"
+          ></i
+        ></a>
 
         <h5 class="menu__header-title">
           const <span class="punto">ltizzi </span> = new
@@ -44,38 +49,62 @@
       </header>
       <nav class="menu__nav">
         <ul class="menu__ul">
-          <li class="menu__item">
-            <a href="#about" class="menu__link" style="color: #bd93f9"
+          <li class="menu__item scale">
+            <a
+              href="#about"
+              class="menu__link"
+              style="color: #bd93f9"
+              title="Acerca de mí"
               >ltizzi</a
             >
           </li>
           <p class="punto">.get<span style="color: #8be9fd">(</span></p>
-          <li class="menu__item">
-            <a href="#skills" class="menu__link" style="color: #f1fa8c"
+          <li class="menu__item scale">
+            <a
+              href="#skills"
+              class="menu__link"
+              style="color: #f1fa8c"
+              title="ver habilidades"
               >Skills<span class="punto">,</span></a
             >
           </li>
-          <li class="menu__item">
-            <a href="#hobbies" class="menu__link" style="color: #50fa7b"
+          <li class="menu__item scale">
+            <a
+              href="#hobbies"
+              class="menu__link"
+              style="color: #50fa7b"
+              title="ver hobbies"
               >Hobbies</a
             >
           </li>
 
           <p class="punto"><span style="color: #8be9fd">)</span>.</p>
-          <li class="menu__item">
-            <a href="#formacion" class="menu__link" style="color: #8be9fd"
+          <li class="menu__item scale">
+            <a
+              href="#formacion"
+              class="menu__link"
+              style="color: #8be9fd"
+              title="ver formación"
               >getFormación()</a
             >
           </li>
           <p class="punto">.</p>
-          <li class="menu__item">
-            <a href="#proyectos" class="menu__link" style="color: #ff79c6"
+          <li class="menu__item scale">
+            <a
+              href="#proyectos"
+              class="menu__link"
+              style="color: #ff79c6"
+              title="ver proyectos"
               >getProyectos()</a
             >
           </li>
           <p class="punto">.</p>
-          <li class="menu__item">
-            <a href="#contacto" class="menu__link" style="color: #ffb86c"
+          <li class="menu__item scale">
+            <a
+              href="#contacto"
+              class="menu__link"
+              style="color: #ffb86c"
+              title="mandar mensaje"
               >Contacto() <span class="punto">;</span></a
             >
           </li>
@@ -83,7 +112,7 @@
       </nav>
     </section>
     <section class="about" id="home">
-      <div class="about__header">
+      <div class="about__header slowFade">
         <div class="about__header-text">
           <h2 class="about__title animLeft">
             Hola, mi nombre es Leonardo Terlizzi y soy Desarrollador Web
@@ -93,29 +122,47 @@
             estoy participando del programa Oracle ONE en Alura Latam
           </p>
           <ul class="about__redes animLeft3">
-            <li class="about__redes-item">
-              <a href="https://github.com/Ltizzi" class="about__redes-link"
+            <li class="about__redes-item scale">
+              <a
+                href="https://github.com/Ltizzi"
+                class="about__redes-link"
+                title="perfil de github"
                 ><i class="fa-brands fa-github about__redes-icon"></i
               ></a>
             </li>
-            <li class="about__redes-item">
+            <li class="about__redes-item scale">
               <a
                 href="https://www.linkedin.com/in/lterlizzi/"
                 class="about__redes-link"
+                title="perfil de linkedin"
                 ><i class="fa-brands fa-linkedin about__redes-icon"></i
               ></a>
             </li>
-            <li class="about__redes-item">
-              <a href="https://twitter.com/ltizzi83" class="about__redes-link"
+            <li class="about__redes-item scale">
+              <a
+                href="https://twitter.com/ltizzi83"
+                class="about__redes-link"
+                title="perfil de twitter"
                 ><i class="fa-brands fa-twitter about__redes-icon"></i
               ></a>
             </li>
-            <li class="about__redes-item">
+            <li class="about__redes-item scale">
               <a
                 href="mailto:terlizzileonardo@gmail.com"
                 class="about__redes-link"
+                title="Mandar mail"
                 ><i class="fa-solid fa-envelope about__redes-icon"></i
               ></a>
+            </li>
+            <li class="about__redes-item scale">
+              <a
+                href="assets/CV Terlizzi Leonardo.pdf"
+                class="about__redes-link"
+                title="Descargar CV"
+                target="”_blank”"
+              >
+                CV <i class="fas fa-file-pdf about__redes-icon"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -126,7 +173,7 @@
         />
       </div>
       <span id="about"></span>
-      <div class="about__bajada">
+      <div class="about__bajada slowFade">
         <h3 class="about__bajada-title">Sobre mí</h3>
         <p class="about__bajada-texto">
           Me llamo Leonardo. Desde mi primera computadora, una 386 DX 40Mhz con
@@ -155,16 +202,16 @@
       <h3 class="skills__hard-title">Hard Skills</h3>
       <ul class="skills__hard">
         <li class="skills__item">
-          <i class="fa-brands fa-html5 skills__icon"></i>
+          <i class="fa-brands fa-html5 skills__icon scale"></i>
 
           <p class="skills__title">HTML</p>
         </li>
         <li class="skills__item">
-          <i class="fa-brands fa-css3-alt skills__icon"></i>
+          <i class="fa-brands fa-css3-alt skills__icon moveR"></i>
           <p class="skills__title">CSS</p>
         </li>
         <li class="skills__item">
-          <i class="fa-brands fa-js skills__icon"></i>
+          <i class="fa-brands fa-js skills__icon blop"></i>
           <p class="skills__title">JavaScript</p>
         </li>
         <li class="skills__item">
@@ -176,7 +223,7 @@
             height="32"
             viewBox="0 0 50 50"
             style="fill: #8be9fd"
-            class="skills__icon"
+            class="skills__icon biger"
           >
             <path
               d="M45,4H5C4.447,4,4,4.448,4,5v40c0,0.552,0.447,1,1,1h40c0.553,0,1-0.448,1-1V5C46,4.448,45.553,4,45,4z M29,26.445h-5V42h-4	V26.445h-5V23h14V26.445z M30.121,41.112v-4.158c0,0,2.271,1.712,4.996,1.712c2.725,0,2.62-1.782,2.62-2.026	c0-2.586-7.721-2.586-7.721-8.315c0-7.791,11.25-4.717,11.25-4.717l-0.14,3.704c0,0-1.887-1.258-4.018-1.258s-2.9,1.013-2.9,2.096	c0,2.795,7.791,2.516,7.791,8.141C42,44.955,30.121,41.112,30.121,41.112z"
@@ -185,51 +232,51 @@
           <p class="skills__title">TypeScript</p>
         </li>
         <li class="skills__item">
-          <i class="fa-brands fa-angular skills__icon"></i>
+          <i class="fa-brands fa-angular skills__icon bigBlop"></i>
           <p class="skills__title">Angular</p>
         </li>
         <li class="skills__item">
-          <i class="fa-brands fa-java skills__icon"></i>
+          <i class="fa-brands fa-java skills__icon moverDiag"></i>
           <p class="skills__title">Java</p>
         </li>
         <li class="skills__item">
-          <i class="fa-solid fa-leaf skills__icon"></i>
+          <i class="fa-solid fa-leaf skills__icon moverDiagBrut"></i>
           <p class="skills__title">Spring</p>
         </li>
         <li class="skills__item">
-          <i class="fa-solid fa-database skills__icon"></i>
+          <i class="fa-solid fa-database skills__icon blop"></i>
 
           <p class="skills__title">MySQL</p>
         </li>
         <li class="skills__item">
-          <i class="fa-solid fa-code-branch skills__icon"></i>
+          <i class="fa-solid fa-code-branch skills__icon moveR"></i>
           <p class="skills__title">GIT</p>
         </li>
         <li class="skills__item">
-          <i class="fa-brands fa-linux skills__icon"></i>
+          <i class="fa-brands fa-linux skills__icon bigBlop"></i>
           <p class="skills__title">GNU/Linux</p>
         </li>
       </ul>
       <h3 class="skills__soft-title">Soft Skills</h3>
       <ul class="skills__soft">
         <li class="skills__item">
-          <i class="fa-solid fa-image-portrait skills__icon"></i>
+          <i class="fa-solid fa-image-portrait skills__icon biger"></i>
           <p class="skills__title">Autodidacta</p>
         </li>
         <li class="skills__item">
-          <i class="fa-solid fa-palette skills__icon"></i>
+          <i class="fa-solid fa-palette skills__icon blop"></i>
           <p class="skills__title">Creativo</p>
         </li>
         <li class="skills__item">
-          <i class="fa-regular fa-comments skills__icon"></i>
+          <i class="fa-regular fa-comments skills__icon moverDiagBrut"></i>
           <p class="skills__title">Comunicación</p>
         </li>
         <li class="skills__item">
-          <i class="fa-solid fa-hand-holding-hand skills__icon"></i>
+          <i class="fa-solid fa-hand-holding-hand skills__icon scale"></i>
           <p class="skills__title">Empatía</p>
         </li>
         <li class="skills__item">
-          <i class="fa-regular fa-lightbulb skills__icon"></i>
+          <i class="fa-regular fa-lightbulb skills__icon moverDiag"></i>
           <p class="skills__title">Resolutivo</p>
         </li>
       </ul>
@@ -237,23 +284,23 @@
       <h3 class="hobbies__main-tittle">Hobbies</h3>
       <ul class="skills__soft">
         <li class="skills__item">
-          <i class="fa-solid fa-music skills__icon"></i>
+          <i class="fa-solid fa-music skills__icon moveR"></i>
           <p class="skills__title">Tocar música</p>
         </li>
         <li class="skills__item">
-          <i class="fa-solid fa-book-open skills__icon"></i>
+          <i class="fa-solid fa-book-open skills__icon bigBlop"></i>
           <p class="skills__title">Lectura</p>
         </li>
         <li class="skills__item">
-          <i class="fa-regular fa-pen-to-square skills__icon"></i>
+          <i class="fa-regular fa-pen-to-square skills__icon scale"></i>
           <p class="skills__title">Escritura</p>
         </li>
         <li class="skills__item">
-          <i class="fa-solid fa-film skills__icon"></i>
+          <i class="fa-solid fa-film skills__icon blop"></i>
           <p class="skills__title">Series y Películas</p>
         </li>
         <li class="skills__item">
-          <i class="fa-solid fa-gamepad skills__icon"></i>
+          <i class="fa-solid fa-gamepad skills__icon moverDiagBrut"></i>
           <p class="skills__title">Videojuegos</p>
         </li>
       </ul>
@@ -308,17 +355,19 @@
         <h5 class="proyecto__title">Encriptador</h5>
         <div class="proyecto__inner">
           <ul class="proyecto__submenu">
-            <li class="proyecto__item">
+            <li class="proyecto__item big">
               <a
                 href="https://github.com/Ltizzi/Alura-Challenge-N-1"
                 class="proyecto__link"
+                title="Repositorio github"
                 ><i class="fa-brands fa-github proyecto__link-icon"></i
               ></a>
             </li>
-            <li class="proyecto__item">
+            <li class="proyecto__item big">
               <a
                 href="https://ltizzi.github.io/Alura-Challenge-N-1/"
                 class="proyecto__link"
+                title="ir a demo"
                 >Demo</a
               >
             </li>
@@ -341,17 +390,19 @@
             class="proyecto__imagen"
           />
           <ul class="proyecto__submenu">
-            <li class="proyecto__item">
+            <li class="proyecto__item big">
               <a
                 href="https://github.com/Ltizzi/Alura-Challenge-N-2"
                 class="proyecto__link"
+                title="ir a repositorio de github"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </li>
-            <li class="proyecto__item">
+            <li class="proyecto__item big">
               <a
                 href="https://ltizzi.github.io/Alura-Challenge-N-2/"
                 class="proyecto__link"
+                title="ir a demo"
                 >Demo</a
               >
             </li>
@@ -363,15 +414,19 @@
         <h5 class="proyecto__title">Portfolio Web</h5>
         <div class="proyecto__inner">
           <ul class="proyecto__submenu">
-            <li class="proyecto__item">
+            <li class="proyecto__item big">
               <a
                 href="https://github.com/Ltizzi/Portfolio-frontend"
                 class="proyecto__link"
+                title="ir a repositorio de github"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </li>
-            <li class="proyecto__item">
-              <a href="https://ltizzi-portfolio.web.app/" class="proyecto__link"
+            <li class="proyecto__item big">
+              <a
+                href="https://ltizzi-portfolio.web.app/"
+                class="proyecto__link"
+                title="ver demo"
                 >Demo</a
               >
             </li>
@@ -425,7 +480,7 @@
             placeholder="Mensaje"
           ></textarea>
           <br />
-          <input type="submit" class="contacto__form-submit" />
+          <input type="submit" class="contacto__form-submit big" />
         </form>
       </div>
     </section>
