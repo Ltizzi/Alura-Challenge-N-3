@@ -1,12 +1,12 @@
 .skills {
   padding: 2rem 3rem;
   /* background-color: #f7f5e9; */
-  background: #f8f8f2;
+  /* background: #f8f8f2; */
 }
 .skills__hard-title,
 .skills__soft-title,
 .hobbies__main-tittle {
-  color: #44475a;
+  color: #f1fa8c;
   font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
   text-align: center;
@@ -38,14 +38,14 @@
 }
 
 .skills__icon {
-  color: #6272a4;
+  color: #8be9fd;
   font-size: 2.2rem;
   margin-top: 7rem;
   margin-left: 1rem;
 }
 
 .skills__title {
-  color: #44475a;
+  color: #f1fa8c;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
   padding-top: 0.2rem;

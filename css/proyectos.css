@@ -79,4 +79,8 @@
   .proyecto__submenu {
     padding-top: 2rem;
   }
+
+  .proyecto__link {
+    font-size: 0.5rem;
+  }
 }

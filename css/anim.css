@@ -1,0 +1,32 @@
+.animLeft {
+  animation: leftTransition 0.5s ease none;
+}
+.animLeft2 {
+  animation: leftTransition 0.8s ease none;
+}
+
+.animLeft3 {
+  animation: leftTransition 1s ease none;
+}
+
+.animRight {
+  animation: rightTransition 1.2s ease none;
+}
+
+@keyframes leftTransition {
+  from {
+    transform: translateX(-2000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes rightTransition {
+  from {
+    transform: translateX(5000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
