@@ -1367,7 +1367,7 @@
     1407px 247px #bd93f9, 1192px 708px #ff5555, 1649px 1373px #f8f8f2;
 }
 
-.star3 {
+.stars3 {
   width: 3px;
   width: 3px;
   background: transparent;
@@ -1493,7 +1493,7 @@
     521px 301px #6272a4, 1298px 442px #f8f8f2;
 }
 
-.star3:after {
+.stars3:after {
   content: "";
   position: absolute;
   top: 2000px;
